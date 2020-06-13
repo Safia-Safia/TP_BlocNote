@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP BlocNote</string>
+    <string name="noir">Noir</string>
+    <string name="bleu">Bleu</string>
+    <string name="rouge">Rouge</string>
+    <string name="italique">Italique</string>
+    <string name="soulign">Souligné</string>
+    <string name="smiley">Smiley</string>
+</resources>

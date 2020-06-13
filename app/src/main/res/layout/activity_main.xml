@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_gras"
+        android:layout_width="121dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="10dp"
+        android:padding="15dp"
+        android:text="Gras"
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_itialique"
+        android:layout_width="122dp"
+        android:layout_height="71dp"
+        android:layout_toEndOf="@+id/btn_gras"
+        android:text="@string/italique"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_souligné"
+        android:layout_width="124dp"
+        android:layout_height="71dp"
+        android:layout_toEndOf="@id/btn_itialique"
+        android:text="@string/soulign" />
+
+    <TextView
+        android:id="@+id/txt_smiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smiley"
+        android:layout_below="@+id/btn_gras"
+        android:padding="30sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_joyful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="114dp"
+        android:layout_toEndOf="@id/txt_smiley"
+        android:src="@drawable/joyful" />
+
+    <ImageButton
+        android:id="@+id/img_btn_wink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="114dp"
+        android:layout_toEndOf="@id/img_btn_smile"
+        android:src="@drawable/wink" />
+
+    <ImageButton
+        android:id="@+id/img_btn_smile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:layout_marginTop="114dp"
+        android:layout_toEndOf="@id/img_btn_joyful"
+        android:src="@drawable/smile" />
+
+    <RadioGroup
+        android:id="@+id/colorgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_smiley"
+        android:orientation="horizontal"
+        >
+    <RadioButton
+        android:id="@+id/radio_btn_noir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/noir" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_bleu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="33dp"
+            android:padding="15dp"
+            android:text="@string/bleu" />
+
+        <RadioButton
+        android:id="@+id/radio_btn_rouge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/rouge" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="124dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/colorgroup"
+        android:layout_centerHorizontal="true"
+        android:text="Cacher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hide"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="4dp"
+        android:text="______________________________________________________" />
+
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/btn_hide"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="11dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="39dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/btn_hide"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="-6dp"
+        android:layout_toLeftOf="@+id/edit"
+        android:text="EDDIT" />
+
+    <TextView
+        android:id="@+id/txtprevu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREVISUALISATION"
+        android:layout_below="@id/edit"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/previsualisation"
+        android:textSize="25dp"
+        android:layout_below="@id/txtprevu"
+        android:text=" "
+        />
+
+</RelativeLayout>
